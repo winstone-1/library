@@ -4,6 +4,10 @@ import BookLibrary from './Components/BookLibrary'
 import Header from './Components/Header'
 
 function App() {
+  const headingStyle = {
+    color : "blue",
+    backgroundColor : ""
+  }
   return (
     <div>
       <>
