@@ -2,6 +2,7 @@ import React from 'react'
 import BookForm from './Components/BookForm'
 import BookLibrary from './Components/BookLibrary'
 import Header from './Components/Header'
+import BookList from './Components/BookList'
 
 function App() {
   const headingStyle = {
@@ -14,6 +15,7 @@ function App() {
       <BookForm/>
       <BookLibrary/>
       <Header/>
+      <BookList/>
       </>
     </div>
   )

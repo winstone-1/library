@@ -1,11 +1,35 @@
-import React from 'react'
+import { useState, useEffect } from 'react';
+import BookList from './BookList';
+import BookForm from './BookForm';
 
-function BookLibrary() {
+const BookLibrary = () => {
+  const [books, setBooks] = useState([]);
+
+  
+  useEffect(() => {
+    fetch('https://openlibrary.org/subjects/programming.json?limit=5')
+      .then(res => res.json())
+      .then(data => {
+        
+        const formatted = data.works.map(b => ({ 
+          id: b.key, 
+          title: b.title, 
+          author: b.authors ? b.authors[0].name : "Unknown Author" 
+        }));
+        setBooks(formatted);
+      });
+  }, []);
+
   return (
-    <div>
+    <div className="p-4">
       
-    </div>
-  )
-}
+      <BookForm onAdd={(newBook) => setBooks([newBook, ...books])} />
+      
+      <hr className="my-6" />
 
-export default BookLibrary
+      
+      <BookList books={books} />
+    </div>
+  );
+};
+export default BookLibrary;
