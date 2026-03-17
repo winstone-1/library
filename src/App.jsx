@@ -1,24 +1,17 @@
-import React from 'react'
-import BookForm from './Components/BookForm'
-import BookLibrary from './Components/BookLibrary'
-import Header from './Components/Header'
-import BookList from './Components/BookList'
+import React from 'react';
+import Header from './Components/Header';
+import BookLibrary from './Components/BookLibrary';
 
 function App() {
-  const headingStyle = {
-    color : "blue",
-    backgroundColor : ""
-  }
   return (
-    <div>
-      <>
-      <BookForm/>
-      <BookLibrary/>
-      <Header/>
-      <BookList/>
-      </>
+    <div className="min-h-screen bg-gray-100">
+      <Header />
+      <main className="max-w-4xl mx-auto p-4">
+        {/* BookLibrary handles the state for both the Form and the List */}
+        <BookLibrary />
+      </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
