@@ -1,21 +1,17 @@
-#  My Digital Library - React Project
+# 📚 My Digital Library
 
-A modern, responsive React application that allows users to manage a personal book collection. This project integrates with the **OpenLibrary API** for live book discovery and utilizes **Tailwind CSS** for a sleek UI.
+A modern web application built with **React** and **Tailwind CSS v4** that allows users to manage a personal book collection. This project features live integration with the **OpenLibrary API** for real-time book discovery and searching.
 
-##  Features
-- **Initial Collection:** Starts with a curated list of programming classics.
-- **Live API Search:** Search millions of books via the OpenLibrary API with debounced input.
-- **Dynamic Addition:** Add books directly from search results or via a manual entry form.
-- **State Management:** Real-time list rendering, adding, and deleting items.
-- **Responsive Design:** Mobile-first layout using Tailwind CSS Grid.
+## 🚀 Key Features
+- **Live API Search:** Find any book in the OpenLibrary database as you type.
+- **Dynamic Collection:** Add searched books to your permanent library or add them manually.
+- **Persistent State:** Manage your collection with real-time "Add" and "Delete" functionality.
+- **Modern UI:** Responsive grid layout designed with Tailwind CSS v4.
+- **Bonus Implementation:** Includes API fetching, debounced search, and custom filtering.
 
-##  Tech Stack
-- **Framework:** React (Vite)
-- **Styling:** Tailwind CSS v4
-- **API:** OpenLibrary Search API
-- **Deployment:** Vercel
+## 🛠️ Tech Stack
+- **React 18+** (Vite)
+- **Tailwind CSS v4**
+- **OpenLibrary API**
+- **Vercel** (Deployment)
 
-##  Installation & Setup
-1. Clone the repository:
-   ```bash
-   git clone <your-repo-url>
